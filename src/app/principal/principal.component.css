@@ -1,0 +1,30 @@
+ul{margin-left: 150px;}
+
+#formulario{
+            border: solid ;
+            border-radius: 50px;
+            margin-left: 450px;
+            margin-right: 450px;
+            background-color: aqua;}
+
+#botonEnviar{
+            padding:10px;
+            margin-left: 25px;
+            border: solid ;
+            border-radius: 50px;
+            font-size: 18px;
+}
+
+#cancionesRegistradas{
+            text-align: center;
+            font-style: italic;
+            font-size:18px;
+            margin-left: 450px;
+            margin-right: 450px;
+            background-color: beige;
+}
+
+#tituloSalida{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}

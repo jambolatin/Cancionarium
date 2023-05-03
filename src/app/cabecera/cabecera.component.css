@@ -1,0 +1,23 @@
+img {
+    margin-left: 50px;
+    margin-bottom: 25px;
+    border: solid 1px;
+    display: block;
+}
+
+#tituloCabecera {
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    
+    
+}
+
+header{
+    
+    background-color: aquamarine;
+    border: solid 2px;}
+
+
+

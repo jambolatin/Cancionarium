@@ -1,0 +1,47 @@
+<br>
+<div id="formulario">
+<!-- ngSubmit permite ejecutar un método como respuesta al evento de click en el submit del formulario--> 
+<!-- ngForm añade las variables necesarias para el control y validacion de formularios Angular-->       
+<form (ngSubmit)="mostrarPlaylist()" #formulario1="ngForm">
+<!--con ngModel se almacena el valor del input en la variable con el mismo nombre definida en el controlador-->       
+<ul>
+    <li><label for="cancion">Canción</label></li>
+    <input type="text" 
+    [(ngModel)]="cancion" 
+    name="cancion" 
+    required>
+
+    <li><label for="autor">Autor</label></li>
+    <input type="text" 
+    [(ngModel)]="autor" 
+    name="autor" 
+    required>
+    
+    <li><label for="formato">Formato</label></li>
+    <select id="formato"
+            name="formato"
+            [(ngModel)]="formato"
+            required
+            >
+        <option value="mp3">.mp3</option>
+        <option value="wav">.wav</option>
+        <option value="ogg">.ogg</option>
+    </select>
+<!-- el botón permanece desactivado hasta que no haya entrada en el formulario-->
+    <button type="submit" [disabled]="formulario1.invalid">Enviar datos</button>
+</ul>    
+</form>
+</div>
+
+
+<!-- la variable local playlist permite acceder a este elemento del DOM desde el controlador-->
+<!-- por interpolacion se muestra la salida playlist tras ejecutar la función mostrarPlaylist()-->
+<h2 id="tituloSalida">Canciones registradas:</h2>
+<hr>
+<div id="cancionesRegistradas" #playlist></div>
+
+
+
+
+
+
